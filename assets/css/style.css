@@ -6,7 +6,7 @@
 }
 
 .headerContainer {  
-    position: relative;
+    position: fixed;
     margin: 0 auto;
     width: 100%;
     height: 80px; 
@@ -16,7 +16,6 @@
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
-    position: fixed;
     border-style: solid;
     border-color: #cccccc;
     border-width:  0px 0px 3px 0px;
@@ -94,7 +93,7 @@ li a:hover:not(.active) {
 }
 
 #footerbox {
-    position: absolute;
+    position: fixed;
     width: 100%;
     left: 0;
     height: 50px;
@@ -103,4 +102,64 @@ li a:hover:not(.active) {
     border-style: solid;
     border-color: #4aaaa5;
     border-width:  5px 0px 0px 0px;
+}
+
+/*Contact Form*/
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-width: 0;
+}
+
+#message{
+    height: 200px;
+}
+input[type=submit] {
+  width: 15%;
+  background-color: #4aaaa5;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #4595a0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*Portfolio*/
+
+.portfolio-pic {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.portfolio-tag {
+    position: absolute;
+    bottom:-5px;
+    left: 0;
+    width: 100%;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding-top: 15px;
+    color: #ffffff;
+    height: 50px;
 }
