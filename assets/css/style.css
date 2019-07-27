@@ -20,7 +20,6 @@
 }
 #headerContent { 
     position: absolute;
-    margin: 0px;
     width: 960px;
     height: 80px; 
     left: 50%;
@@ -29,7 +28,6 @@
 #name {
     position: absolute;
     float: left;
-    margin: 0 auto;
     width: 180px;
     height: 100%; 
     font-size: 20px;
@@ -38,34 +36,33 @@
     line-height: 80px; 
     font-weight: bold;
     background: #4aaaa5;
-    
 }
 
-li {
+#buttonlist{
     float: right;
     border-right: 1px solid #cccccc; 
 }     
-li a {
+#buttonlist a {
     display: block;
     color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li:last-child {
+#buttonlist:first-child {
     border-right: none;
 }
-li a:hover:not(.active) {
-    background-color: #4aaaa5;
+#buttonlist:last-child {
+    border-right: none;
 }
-.active {
-    background-color: #ffffff;
+#buttonlist a:hover:not(.active) {
+    background-color: #4aaaa5;
 }
 
 #bioContainer { 
     position: absolute;
     top: 100px;
-    overflow:auto; 
+    overflow: auto; 
     width: 898px; 
     padding: 30px;
     background: #ffffff;
