@@ -19,6 +19,7 @@
     border-style: solid;
     border-color: #cccccc;
     border-width:  0px 0px 3px 0px;
+    z-index: 2;
 }
 #headerContent { 
     position: absolute;
@@ -138,22 +139,15 @@ input[type=submit]:hover {
   background-color: #4595a0;
 }
 
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 /*Portfolio*/
 
-.portfolio-pic {
+.portfolio-pic-holder {
     position: relative;
-    width: 250px;
-    height: 250px;
+
 }
 
 .portfolio-tag {
-    position: absolute;
+    position: relative;
     bottom:-5px;
     left: 0;
     width: 100%;
