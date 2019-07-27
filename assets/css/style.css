@@ -1,5 +1,5 @@
 .font {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:  20px;
     color: grey;
     text-align: left;
@@ -19,7 +19,7 @@
     border-style: solid;
     border-color: #cccccc;
     border-width:  0px 0px 3px 0px;
-    z-index: 2;
+    z-index: 3;
 }
 #headerContent { 
     position: absolute;
@@ -78,15 +78,18 @@ li a:hover:not(.active) {
     border-width: 2px; 
     left: 50%;
     transform: translate(-50%, 0%);
+    margin-bottom: 200px;
 }
 #bioHeader { 
     position: relative; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 32px;
+    margin: 15px auto;
 }
 #bioSeperator { 
     position: relative;
     height: 3px;
+    margin-top: 30px;
     width: 898px;
     background: #dddddd;
     left: 50%;
@@ -143,17 +146,34 @@ input[type=submit]:hover {
 
 .portfolio-pic-holder {
     position: relative;
+    width: 250px;
+    Height: 200px;
+    margin-top: 40px;
 
 }
 
 .portfolio-tag {
-    position: relative;
-    bottom:-5px;
-    left: 0;
-    width: 100%;
+    position: absolute;
+    bottom: 10px;
     background-color: #4aaaa5;
     text-align: center;
-    padding-top: 15px;
     color: #ffffff;
     height: 50px;
+    width: 100%;
+    line-height: 2.5;
 }
+
+.row {
+    content: "";
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+/* .row > div {
+    margin-top: 5px ;
+    margin-bottom: 5px;
+} */
